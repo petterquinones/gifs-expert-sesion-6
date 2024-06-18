@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 export const getGifs = async(category)=>{
     const url = `https://api.giphy.com/v1/gifs/search?api_key=7Q05UiFxZc55gfoRt0RBiZjcJiPyRfTg&q=${category}&limit=10`;
@@ -9,4 +10,5 @@ export const getGifs = async(category)=>{
         url: img.images.downsized_medium.url
     }))
     console.log(gifs)
+    return gifs
 }
